@@ -1,0 +1,4 @@
+file = open("task2.txt","w")
+file.write("This is task2!!!")
+file.close()
+print("File Written Successfully!!!\n")
