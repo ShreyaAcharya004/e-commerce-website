@@ -1,4 +1,4 @@
-area and perimeter of circle
+
 class Circle():
     def __init__(self, s):
         self.radius = s
@@ -9,6 +9,6 @@ class Circle():
     def perimeter(self):
         return 2*self.radius*3.14
 
-NewCircle = Circle(10)
+NewCircle = Circle(20)
 print(NewCircle.area())
 print(NewCircle.perimeter())
