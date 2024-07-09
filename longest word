@@ -1,0 +1,12 @@
+def longestt_words(word_list):
+    longestt_words = []
+    max_length = 0
+    
+    for word in word_list:
+        if len(word) > max_length:
+            max_length = len(word)
+            longestt_words = [word]
+        elif len(word) == max_length:
+            longestt_words.append(word)
+    
+    return longestt_words
