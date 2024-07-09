@@ -1,5 +1,5 @@
 def file_read(fname):
-        with open (fname, "r") as myfile:
+        with open (fname, "r") as my files:
                 data=myfile.readlines()
                 print(data)
 file_read('text.txt')
