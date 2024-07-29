@@ -80,3 +80,31 @@ Que 28	What relationship is appropriate for Course and Faculty?
 Ans:	Association relationship
 Que 29	What relationship is appropriate for Student and Person?
 Ans:	Inheritance relationship
+
+
+
+Q.19 How Do You Handle Exceptions With Try/Except/Finally In Python? Explain with coding snippets.
+
+ANS: In Python, the try, except, and finally blocks are used for exception handling. Here's how you can use them:
+1.	try block: You put the code that might raise an exception inside this block.
+2.	except block: You specify the code to execute if an exception occurs within the try block.
+3.	finally block: This block is optional. It allows you to execute code whether an exception occurred or not. It's typically used for cleanup tasks.
+
+try:
+    # Code that might raise an exception
+    x = int(input("Enter a number: "))
+    result = 10 / x
+    print("Result:", result)
+
+except ValueError:
+    # This block will execute if a ValueError occurs
+    print("Please enter a valid number.")
+
+except ZeroDivisionError:
+    # This block will execute if a ZeroDivisionError occurs
+    print("Cannot divide by zero.")
+
+finally:
+    # This block will always execute, regardless of whether an exception occurred or not
+    print("This code always runs, regardless of exceptions.")
+
